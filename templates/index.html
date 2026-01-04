@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chess Game</h1>
+        <div class="game-info">
+            <div class="turn-indicator">
+                <span id="current-turn">Your Turn (White)</span>
+            </div>
+            <button id="reset-btn" onclick="resetGame()">Reset Game</button>
+        </div>
+        <div id="chessboard"></div>
+        <div class="status" id="status"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/chess.js') }}"></script>
+</body>
+</html>
+
